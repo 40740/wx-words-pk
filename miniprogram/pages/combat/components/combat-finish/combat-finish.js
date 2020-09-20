@@ -1,5 +1,5 @@
 import { throttle, px2Rpx, formatList, dateFormat } from '../../../../utils/util'
-import { roomModel, userModel, wordModel, signModel } from '../../../../model/index'
+import { roomModel, userModel, wordModel, signModel, userActivityModel } from '../../../../model/index'
 import $ from './../../../../utils/Tool'
 import log from './../../../../utils/log'
 import { getCombatSubjectNumber, SUBJECT_HAS_OPTIONS_NUMBER, SIGN_PVP_NUMBER, SIGN_WIN_NUMBER } from '../../../../utils/setting'
@@ -47,6 +47,9 @@ Component({
     },
     houseOwnerInfo: {
       type: Object
+    },
+    activityIds: {
+      type: Array
     },
     rightUserInfo: {
       type: Object
@@ -218,10 +221,19 @@ Component({
       if (isHouseOwner) {
         await roomModel.finish(roomId)
         await userModel.finishCombat(leftObj)
+        await this.calcActivityData(leftObj, houseOwnerInfo)
       } else {
         await userModel.finishCombat(rightObj)
+        await this.calcActivityData(rightObj, rightUserInfo)
       }
       $.hideLoading()
+    },
+
+    async calcActivityData(obj, userInfo) {
+      const { data: { activityIds } } = this
+      for (const activityId of activityIds) {
+        await userActivityModel.finishCombat({ activityId, ...obj }, userInfo)
+      }
     }
   }
 })

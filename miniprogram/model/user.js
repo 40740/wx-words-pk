@@ -1,5 +1,6 @@
 import Base from './base'
 import $ from './../utils/Tool'
+import bookModel from './book'
 const collectionName = 'user'
 
 const doc = {
@@ -32,6 +33,11 @@ class UserModel extends Base {
     super(collectionName)
   }
 
+  async registerAfter() {
+    // TODO: 新用户干预选择图书为交通 后面可以删除
+    return await bookModel.changeBook('traffic', 'random', '交通必备词', '交通')
+  }
+
   register() {
     return this.model.add({ data: { ...doc, createTime: this.date } })
   }
@@ -47,6 +53,7 @@ class UserModel extends Base {
     const { result: userInfo } = await $.callCloud('model_user_getInfo')
     if (userInfo === null) { // 新用户
       await this.register()
+      await this.registerAfter()
       return (await this.getOwnInfo())
     }
     $.store.set('openid', userInfo._openid)

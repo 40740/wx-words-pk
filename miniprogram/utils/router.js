@@ -5,7 +5,8 @@ const pages = {
   userWords: '/pages/userWords/userWords',
   ranking: '/pages/ranking/ranking',
   setting: '/pages/setting/setting',
-  sign: '/pages/sign/sign'
+  sign: '/pages/sign/sign',
+  activity: '/pages/activity/activity'
 }
 
 function to(page, data) {

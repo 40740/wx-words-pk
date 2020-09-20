@@ -4,6 +4,8 @@ import wordModel from './word'
 import roomModel from './room'
 import userWordModel from './userWord'
 import signModel from './sign'
+import activityModel from './activity'
+import userActivityModel from './userActivity'
 
 export {
   userModel,
@@ -11,5 +13,7 @@ export {
   wordModel,
   roomModel,
   userWordModel,
-  signModel
+  signModel,
+  activityModel,
+  userActivityModel
 }

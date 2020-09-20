@@ -6,7 +6,8 @@
     "pages/ranking/ranking",
     "pages/userWords/userWords",
     "pages/setting/setting",
-    "pages/sign/sign"
+    "pages/sign/sign",
+    "pages/activity/activity"
   ],
   "window": {
     "backgroundColor": "#FFFFFF",

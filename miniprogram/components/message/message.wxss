@@ -6,14 +6,18 @@
   bottom: 0;
   background: rgba(0, 0, 0, 0.65);
   z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .message {
-  width: 500rpx;
   background: rgba(255, 255, 255, 1);
   border-radius: 24rpx;
-  margin: 35vh auto 0 auto;
-  overflow: hidden;
+  margin: 0 auto;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  max-height: 78vh;
 }
 
 .message-icon {
@@ -24,7 +28,6 @@
 }
 
 .message-text {
-  width: 350rpx;
   margin: 44rpx auto;
   font-size:28rpx;
   font-weight:500;

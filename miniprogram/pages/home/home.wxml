@@ -11,6 +11,8 @@
 
 <book-select id="book-select" bookList="{{bookList}}" bind:onChangeBook="onChangeBook" />
 
+<activity-swiper wx:if="{{activityList.length!==0}}" activityList="{{activityList}}" bind:onToActivity="onToActivity" />
+
 <buttons bind:onChallengeFriend="onChallengeFriend" bind:onRandomMatch="onRandomMatch" />
 
 <footer id="footer"/>

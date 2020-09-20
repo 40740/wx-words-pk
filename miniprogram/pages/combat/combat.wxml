@@ -31,7 +31,7 @@
 <combat-finish wx:if="{{roomInfo.state==='FINISH'}}" id="combatFinish"
   roomId="{{roomInfo.roomId}}"  wordList="{{wordList}}" isHouseOwner="{{roomInfo.isHouseOwner}}"
   left="{{left}}" right="{{right}}" nextRoomId="{{nextRoomId}}" isNpcCombat="{{roomInfo.isNPC}}"
-  houseOwnerInfo="{{users[0]}}" rightUserInfo="{{users[1]}}"
+  houseOwnerInfo="{{users[0]}}" rightUserInfo="{{users[1]}}" activityIds="{{activityIds}}"
 />
 
 <image wx:if="{{roomInfo.isFriend&&roomInfo.state!=='FINISH'}}"  class="combat-pk-bg" src="./../../images/combat-pk.png" />

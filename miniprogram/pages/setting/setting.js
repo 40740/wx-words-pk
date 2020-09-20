@@ -69,6 +69,19 @@ Page({
       }
     })
   },
+  onClearStorage() {
+    let msg = '清空成功，重启小程序生效'
+    try {
+      wx.clearStorageSync()
+    } catch (e) {
+      msg = '清空失败，请重试'
+    }
+    wx.showToast({
+      title: msg,
+      icon: 'none',
+      duration: 2000
+    })
+  },
   onClearUserWords() {
     wx.showModal({
       title: '提示',

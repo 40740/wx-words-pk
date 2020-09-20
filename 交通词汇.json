@@ -1,0 +1,158 @@
+{"_id":"traffic_1","rank":1,"word":"dead end","bookId":"traffic","trans":[{"tranCn":"此处无路"}]}
+{"_id":"traffic_2","rank":2,"word":"stop","bookId":"traffic","trans":[{"tranCn":"停止"}]}
+{"_id":"traffic_3","rank":3,"word":"slow","bookId":"traffic","trans":[{"tranCn":"减速"}],"trans":[{"tranCn":"缓慢的"}]}
+{"_id":"traffic_4","rank":4,"word":"one way","bookId":"traffic","trans":[{"tranCn":"单行道"}]}
+{"_id":"traffic_5","rank":5,"word":"highway","bookId":"traffic","trans":[{"tranCn":"高速公路"}]}
+{"_id":"traffic_6","rank":6,"word":"caution","bookId":"traffic","trans":[{"tranCn":"小心"}]}
+{"_id":"traffic_7","rank":7,"word":"straight","bookId":"traffic","trans":[{"tranCn":"直行"}]}
+{"_id":"traffic_8","rank":8,"word":"turn right","bookId":"traffic","trans":[{"tranCn":"转右"}]}
+{"_id":"traffic_9","rank":9,"word":"turn left","bookId":"traffic","trans":[{"tranCn":"转左"}]}
+{"_id":"traffic_10","rank":10,"word":"road closed","bookId":"traffic","trans":[{"tranCn":"道路封闭"}]}
+{"_id":"traffic_11","rank":11,"word":"give way","bookId":"traffic","trans":[{"tranCn":"快车先行"}]}
+{"_id":"traffic_12","rank":12,"word":"parking lot","bookId":"traffic","trans":[{"tranCn":"停车场"}]}
+{"_id":"traffic_13","rank":13,"word":"horn prohibited","bookId":"traffic","trans":[{"tranCn":"禁止鸣笛"}]}
+{"_id":"traffic_14","rank":14,"word":"turn Prohibited","bookId":"traffic","trans":[{"tranCn":"禁止掉头"}]}
+{"_id":"traffic_15","rank":15,"word":"overtaking prohibited","bookId":"traffic","trans":[{"tranCn":"禁止超车"}]}
+{"_id":"traffic_16","rank":16,"word":"road works ahead","bookId":"traffic","trans":[{"tranCn":"前方道路施工"}]}
+{"_id":"traffic_17","rank":17,"word":"caution","bookId":"traffic","trans":[{"tranCn":"注意"}]}
+{"_id":"traffic_18","rank":18,"word":"cross-over","bookId":"traffic","trans":[{"tranCn":"交叉路"}]}
+{"_id":"traffic_19","rank":19,"word":"speed limit","bookId":"traffic","trans":[{"tranCn":"限速"}]}
+{"_id":"traffic_20","rank":20,"word":"no turning over","bookId":"traffic","trans":[{"tranCn":"请勿翻越"}]}
+{"_id":"traffic_21","rank":21,"word":"traffic light","bookId":"traffic","trans":[{"tranCn":"红绿灯"}]}
+{"_id":"traffic_22","rank":22,"word":"zebra crossing","bookId":"traffic","trans":[{"tranCn":"斑马线"}]}
+{"_id":"traffic_23","rank":23,"word":"traffic post","bookId":"traffic","trans":[{"tranCn":"交通岗"}]}
+{"_id":"traffic_24","rank":24,"word":"traffic police","bookId":"traffic","trans":[{"tranCn":"交通警察"}]}
+{"_id":"traffic_25","rank":25,"word":"single line","bookId":"traffic","trans":[{"tranCn":"单行线"}]}
+{"_id":"traffic_26","rank":26,"word":"exit","bookId":"traffic","trans":[{"tranCn":"出口"}]}
+{"_id":"traffic_27","rank":27,"word":"entrance","bookId":"traffic","trans":[{"tranCn":"入口"}]}
+{"_id":"traffic_28","rank":28,"word":"timetable","bookId":"traffic","trans":[{"tranCn":"行车时刻表"}]}
+{"_id":"traffic_29","rank":29,"word":" waiting room","bookId":"traffic","trans":[{"tranCn":"候车室"}]}
+{"_id":"traffic_30","rank":30,"word":"track","bookId":"traffic","trans":[{"tranCn":"轨道"}]}
+{"_id":"traffic_31","rank":31,"word":"platform","bookId":"traffic","trans":[{"tranCn":"站台"}]}
+{"_id":"traffic_32","rank":32,"word":"passenger","bookId":"traffic","trans":[{"tranCn":"乘客"}]}
+{"_id":"traffic_33","rank":33,"word":"station staff","bookId":"traffic","trans":[{"tranCn":"车站工作人员"}]}
+{"_id":"traffic_34","rank":34,"word":"conductor","bookId":"traffic","trans":[{"tranCn":"售票员"}]}
+{"_id":"traffic_35","rank":35,"word":"departure","bookId":"traffic","trans":[{"tranCn":"出发"}]}
+{"_id":"traffic_36","rank":36,"word":"carriage","bookId":"traffic","trans":[{"tranCn":"马车"}]}
+{"_id":"traffic_37","rank":37,"word":"car","bookId":"traffic","trans":[{"tranCn":"汽车"}]}
+{"_id":"traffic_38","rank":38,"word":"near","bookId":"traffic","trans":[{"tranCn":"距离近的"}]}
+{"_id":"traffic_39","rank":39,"word":"bicycle","bookId":"traffic","trans":[{"tranCn":"单车"}]}
+{"_id":"traffic_40","rank":40,"word":"scooter","bookId":"traffic","trans":[{"tranCn":"小型电单车"}]}
+{"_id":"traffic_41","rank":41,"word":"motorcycle","bookId":"traffic","trans":[{"tranCn":"摩托车"}]}
+{"_id":"traffic_42","rank":42,"word":"taxi","bookId":"traffic","trans":[{"tranCn":"出租车"}]}
+{"_id":"traffic_43","rank":43,"word":"bus","bookId":"traffic","trans":[{"tranCn":"公共汽车"}]}
+{"_id":"traffic_44","rank":44,"word":"school bus","bookId":"traffic","trans":[{"tranCn":"校车"}]}
+{"_id":"traffic_45","rank":45,"word":"coach","bookId":"traffic","trans":[{"tranCn":"旅游巴"}],"trans":[{"tranCn":"教练"}]}
+{"_id":"traffic_46","rank":46,"word":"jeep","bookId":"traffic","trans":[{"tranCn":"吉普车"}]}
+{"_id":"traffic_47","rank":47,"word":"truck","bookId":"traffic","trans":[{"tranCn":"货车"}]}
+{"_id":"traffic_48","rank":48,"word":"peak-tram","bookId":"traffic","trans":[{"tranCn":"缆车"}]}
+{"_id":"traffic_49","rank":49,"word":"warm","bookId":"traffic","trans":[{"tranCn":"温暖的"}]}
+{"_id":"traffic_50","rank":50,"word":"light-van","bookId":"traffic","trans":[{"tranCn":"小型货车"}]}
+{"_id":"traffic_51","rank":51,"word":"automobile carrier","bookId":"traffic","trans":[{"tranCn":"货运卡车"}]}
+{"_id":"traffic_52","rank":52,"word":"ambulance","bookId":"traffic","trans":[{"tranCn":"救护车"}]}
+{"_id":"traffic_53","rank":53,"word":"garbage truck","bookId":"traffic","trans":[{"tranCn":"垃圾车"}]}
+{"_id":"traffic_54","rank":54,"word":"rainy","bookId":"traffic","trans":[{"tranCn":"下雨的"}]}
+{"_id":"traffic_55","rank":55,"word":"fire engine","bookId":"traffic","trans":[{"tranCn":"消防车"}]}
+{"_id":"traffic_56","rank":56,"word":"trailer truck","bookId":"traffic","trans":[{"tranCn":"拖车"}]}
+{"_id":"traffic_57","rank":57,"word":"tractor","bookId":"traffic","trans":[{"tranCn":"牵引车"}]}
+{"_id":"traffic_58","rank":58,"word":"camper","bookId":"traffic","trans":[{"tranCn":"露营车"}]}
+{"_id":"traffic_59","rank":59,"word":"mail car","bookId":"traffic","trans":[{"tranCn":"邮车"}]}
+{"_id":"traffic_60","rank":60,"word":"police car","bookId":"traffic","trans":[{"tranCn":"警车"}]}
+{"_id":"traffic_61","rank":61,"word":"windy","bookId":"traffic","trans":[{"tranCn":"多风的"}]}
+{"_id":"traffic_62","rank":62,"word":"train","bookId":"traffic","trans":[{"tranCn":"火车"}]}
+{"_id":"traffic_63","rank":63,"word":"metro","bookId":"traffic","trans":[{"tranCn":"地铁"}]}
+{"_id":"traffic_64","rank":64,"word":"cold","bookId":"traffic","trans":[{"tranCn":"冷的"}]}
+{"_id":"traffic_65","rank":65,"word":"high speed trains","bookId":"traffic","trans":[{"tranCn":"高铁"}]}
+{"_id":"traffic_66","rank":66,"word":"sports car","bookId":"traffic","trans":[{"tranCn":"跑车"}]}
+{"_id":"traffic_67","rank":67,"word":"formula car","bookId":"traffic","trans":[{"tranCn":"方程式赛车"}]}
+{"_id":"traffic_68","rank":68,"word":"helicopter","bookId":"traffic","trans":[{"tranCn":"直升机"}]}
+{"_id":"traffic_69","rank":69,"word":"aeroplane","bookId":"traffic","trans":[{"tranCn":"飞机"}]}
+{"_id":"traffic_70","rank":70,"word":"cloudy","bookId":"traffic","trans":[{"tranCn":"多云的"}]}
+{"_id":"traffic_71","rank":71,"word":"junk","bookId":"traffic","trans":[{"tranCn":"帆船"}]}
+{"_id":"traffic_72","rank":72,"word":"ship","bookId":"traffic","trans":[{"tranCn":"船"}]}
+{"_id":"traffic_73","rank":73,"word":"weather","bookId":"traffic","trans":[{"tranCn":"天气"}]}
+{"_id":"traffic_74","rank":74,"word":"passenger liner","bookId":"traffic","trans":[{"tranCn":"客轮"}]}
+{"_id":"traffic_75","rank":75,"word":"red light","bookId":"traffic","trans":[{"tranCn":"红灯"}]}
+{"_id":"traffic_76","rank":76,"word":"yellow light","bookId":"traffic","trans":[{"tranCn":"黄灯"}]}
+{"_id":"traffic_77","rank":77,"word":"green light","bookId":"traffic","trans":[{"tranCn":"绿灯"}]}
+{"_id":"traffic_78","rank":78,"word":"war ship","bookId":"traffic","trans":[{"tranCn":"军舰"}]}
+{"_id":"traffic_79","rank":79,"word":"helmet","bookId":"traffic","trans":[{"tranCn":"头盔"}]}
+{"_id":"traffic_80","rank":80,"word":"accelerator","bookId":"traffic","trans":[{"tranCn":"加速"}]}
+{"_id":"traffic_81","rank":81,"word":"brake","bookId":"traffic","trans":[{"tranCn":"刹车"}]}
+{"_id":"traffic_82","rank":82,"word":"vehicle","bookId":"traffic","trans":[{"tranCn":"交通工具"}]}
+{"_id":"traffic_83","rank":83,"word":"jam","bookId":"traffic","trans":[{"tranCn":"塞车"}]}
+{"_id":"traffic_84","rank":84,"word":"garage","bookId":"traffic","trans":[{"tranCn":"车库"}]}
+{"_id":"traffic_85","rank":85,"word":"overtake","bookId":"traffic","trans":[{"tranCn":"追上"}]}
+{"_id":"traffic_86","rank":86,"word":"insurance","bookId":"traffic","trans":[{"tranCn":"保险"}]}
+{"_id":"traffic_87","rank":87,"word":"engine","bookId":"traffic","trans":[{"tranCn":"发电机"}]}
+{"_id":"traffic_88","rank":88,"word":"driver","bookId":"traffic","trans":[{"tranCn":"司机"}]}
+{"_id":"traffic_89","rank":89,"word":"pilot","bookId":"traffic","trans":[{"tranCn":"机长"}]}
+{"_id":"traffic_90","rank":90,"word":"boarding check","bookId":"traffic","trans":[{"tranCn":"登机牌"}]}
+{"_id":"traffic_91","rank":91,"word":"crash","bookId":"traffic","trans":[{"tranCn":"撞车"}]}
+{"_id":"traffic_92","rank":92,"word":"arrive","bookId":"traffic","trans":[{"tranCn":"到达"}]}
+{"_id":"traffic_93","rank":93,"word":"delay","bookId":"traffic","trans":[{"tranCn":"延误"}]}
+{"_id":"traffic_94","rank":94,"word":"terminal","bookId":"traffic","trans":[{"tranCn":"终点站"}]}
+{"_id":"traffic_95","rank":95,"word":"world","bookId":"traffic","trans":[{"tranCn":"世界"}]}
+{"_id":"traffic_96","rank":96,"word":"accident","bookId":"traffic","trans":[{"tranCn":"（交通）事故"}]}
+{"_id":"traffic_97","rank":97,"word":"driver License","bookId":"traffic","trans":[{"tranCn":"驾驶证"}]}
+{"_id":"traffic_98","rank":98,"word":"speed","bookId":"traffic","trans":[{"tranCn":"速度"}]}
+{"_id":"traffic_99","rank":99,"word":"next","bookId":"traffic","trans":[{"tranCn":"下一个"}]}
+{"_id":"traffic_100","rank":100,"word":"kilometer","bookId":"traffic","trans":[{"tranCn":"公里"}]}
+{"_id":"traffic_101","rank":101,"word":"lots of","bookId":"traffic","trans":[{"tranCn":"大量的"}]}
+{"_id":"traffic_102","rank":102,"word":"bridge","bookId":"traffic","trans":[{"tranCn":"桥"}]}
+{"_id":"traffic_103","rank":103,"word":"building","bookId":"traffic","trans":[{"tranCn":"建筑"}]}
+{"_id":"traffic_104","rank":104,"word":"boating","bookId":"traffic","trans":[{"tranCn":"划船"}]}
+{"_id":"traffic_105","rank":105,"word":"village","bookId":"traffic","trans":[{"tranCn":"村庄"}]}
+{"_id":"traffic_106","rank":106,"word":"high","bookId":"traffic","trans":[{"tranCn":"高的"}]}
+{"_id":"traffic_107","rank":107,"word":"after","bookId":"traffic","trans":[{"tranCn":"在⋯⋯之后"}]}
+{"_id":"traffic_108","rank":108,"word":"water","bookId":"traffic","trans":[{"tranCn":"水"}]}
+{"_id":"traffic_109","rank":109,"word":"first","bookId":"traffic","trans":[{"tranCn":"第一"}]}
+{"_id":"traffic_110","rank":110,"word":"second","bookId":"traffic","trans":[{"tranCn":"第二"}]}
+{"_id":"traffic_111","rank":111,"word":"third","bookId":"traffic","trans":[{"tranCn":"第三"}]}
+{"_id":"traffic_112","rank":112,"word":"fourth","bookId":"traffic","trans":[{"tranCn":"第四"}]}
+{"_id":"traffic_113","rank":113,"word":"fifth","bookId":"traffic","trans":[{"tranCn":"第五"}]}
+{"_id":"traffic_114","rank":114,"word":"twelfth","bookId":"traffic","trans":[{"tranCn":"第十二"}]}
+{"_id":"traffic_115","rank":115,"word":"walk","bookId":"traffic","trans":[{"tranCn":"行走"}]}
+{"_id":"traffic_116","rank":116,"word":"China","bookId":"traffic","trans":[{"tranCn":"中国"}]}
+{"_id":"traffic_117","rank":117,"word":"pupil","bookId":"traffic","trans":[{"tranCn":"小学生"}]}
+{"_id":"traffic_118","rank":118,"word":"contest","bookId":"traffic","trans":[{"tranCn":"比赛"}]}
+{"_id":"traffic_119","rank":119,"word":"drive","bookId":"traffic","trans":[{"tranCn":"驾驶"}]}
+{"_id":"traffic_120","rank":120,"word":"under","bookId":"traffic","trans":[{"tranCn":"在⋯⋯下面"}]}
+{"_id":"traffic_121","rank":121,"word":"fast","bookId":"traffic","trans":[{"tranCn":"快的"}]}
+{"_id":"traffic_122","rank":122,"word":"map","bookId":"traffic","trans":[{"tranCn":"地图"}]}
+{"_id":"traffic_123","rank":123,"word":"white","bookId":"traffic","trans":[{"tranCn":"白色"}]}
+{"_id":"traffic_124","rank":124,"word":"old","bookId":"traffic","trans":[{"tranCn":"老的"}],"trans":[{"tranCn":"旧的"}]}
+{"_id":"traffic_125","rank":125,"word":"young","bookId":"traffic","trans":[{"tranCn":"年轻的"}]}
+{"_id":"traffic_126","rank":126,"word":"man","bookId":"traffic","trans":[{"tranCn":"男"}]}
+{"_id":"traffic_127","rank":127,"word":"woman","bookId":"traffic","trans":[{"tranCn":"女"}]}
+{"_id":"traffic_128","rank":128,"word":"kid","bookId":"traffic","trans":[{"tranCn":"小孩"}]}
+{"_id":"traffic_129","rank":129,"word":"whistle","bookId":"traffic","trans":[{"tranCn":"哨子"}]}
+{"_id":"traffic_130","rank":130,"word":"snowy","bookId":"traffic","trans":[{"tranCn":"下雪的"}]}
+{"_id":"traffic_131","rank":131,"word":"hat","bookId":"traffic","trans":[{"tranCn":"帽子"}]}
+{"_id":"traffic_132","rank":132,"word":"transportation","bookId":"traffic","trans":[{"tranCn":"运输"}]}
+{"_id":"traffic_133","rank":133,"word":"punctual","bookId":"traffic","trans":[{"tranCn":"准时的"}]}
+{"_id":"traffic_134","rank":134,"word":"sign","bookId":"traffic","trans":[{"tranCn":"标志"}]}
+{"_id":"traffic_135","rank":135,"word":"road","bookId":"traffic","trans":[{"tranCn":"路"}]}
+{"_id":"traffic_136","rank":136,"word":"narrow road","bookId":"traffic","trans":[{"tranCn":"窄路"}]}
+{"_id":"traffic_137","rank":137,"word":"dangerous","bookId":"traffic","trans":[{"tranCn":"危险的"}]}
+{"_id":"traffic_138","rank":138,"word":"safe","bookId":"traffic","trans":[{"tranCn":"安全的"}]}
+{"_id":"traffic_139","rank":139,"word":"hospital","bookId":"traffic","trans":[{"tranCn":"医院"}]}
+{"_id":"traffic_140","rank":140,"word":"school","bookId":"traffic","trans":[{"tranCn":"学校"}]}
+{"_id":"traffic_141","rank":141,"word":"silent","bookId":"traffic","trans":[{"tranCn":"寂静"}]}
+{"_id":"traffic_142","rank":142,"word":"careless","bookId":"traffic","trans":[{"tranCn":"粗心"}]}
+{"_id":"traffic_143","rank":143,"word":"information desk","bookId":"traffic","trans":[{"tranCn":"咨询台"}]}
+{"_id":"traffic_144","rank":144,"word":"horn","bookId":"traffic","trans":[{"tranCn":"喇叭"}]}
+{"_id":"traffic_145","rank":145,"word":"travel","bookId":"traffic","trans":[{"tranCn":"旅行"}]}
+{"_id":"traffic_146","rank":146,"word":"gas","bookId":"traffic","trans":[{"tranCn":"汽油"}]}
+{"_id":"traffic_147","rank":147,"word":"distance","bookId":"traffic","trans":[{"tranCn":"距离"}]}
+{"_id":"traffic_148","rank":148,"word":"direction","bookId":"traffic","trans":[{"tranCn":"方向"}]}
+{"_id":"traffic_149","rank":149,"word":"oil","bookId":"traffic","trans":[{"tranCn":"石油"}]}
+{"_id":"traffic_150","rank":150,"word":"number","bookId":"traffic","trans":[{"tranCn":"号牌"}]}
+{"_id":"traffic_151","rank":151,"word":"seat belt","bookId":"traffic","trans":[{"tranCn":"安全带"}]}
+{"_id":"traffic_152","rank":152,"word":"tyre","bookId":"traffic","trans":[{"tranCn":"轮胎"}]}
+{"_id":"traffic_153","rank":153,"word":"wheel","bookId":"traffic","trans":[{"tranCn":"车轮"}]}
+{"_id":"traffic_154","rank":154,"word":"sun glasses","bookId":"traffic","trans":[{"tranCn":"太阳眼镜"}]}
+{"_id":"traffic_155","rank":155,"word":"start","bookId":"traffic","trans":[{"tranCn":"开始"}]}
+{"_id":"traffic_156","rank":156,"word":"street","bookId":"traffic","trans":[{"tranCn":"大街"}]}
+{"_id":"traffic_157","rank":157,"word":"petrol station","bookId":"traffic","trans":[{"tranCn":"加油站"}]}
+{"_id":"traffic_158","rank":158,"word":"handbrake","bookId":"traffic","trans":[{"tranCn":"手刹"}]}

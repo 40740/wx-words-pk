@@ -1,0 +1,158 @@
+dead end 【此处无路】
+stop 【停止】
+slow 【缓慢的】
+one way 【单行道】
+highway 【高速公路】
+caution 【小心】
+straight 【直行】
+turn right 【转右】
+turn left 【转左】
+road closed 【道路封闭】
+give way 【快车先行】
+parking lot 【停车场】
+horn prohibited 【禁止鸣笛】
+turn Prohibited 【禁止掉头】
+overtaking prohibited 【禁止超车】
+road works ahead 【前方道路施工】
+caution 【注意】
+cross-over 【交叉路】
+speed limit 【限速】
+no turning over 【请勿翻越】
+traffic light 【红绿灯】
+zebra crossing 【斑马线】
+traffic post 【交通岗】
+traffic police 【交通警察】
+single line 【单行线】
+exit 【出口】
+entrance 【入口】
+timetable 【行车时刻表】
+ waiting room 【候车室】
+track 【轨道】
+platform 【站台】
+passenger 【乘客】
+station staff 【车站工作人员】
+conductor 【售票员】
+departure 【出发】
+carriage 【马车】
+car 【汽车】
+near 【距离近的】
+bicycle 【单车】
+scooter 【小型电单车】
+motorcycle 【摩托车】
+taxi 【出租车】
+bus 【公共汽车】
+school bus 【校车】
+coach 【教练】
+jeep 【吉普车】
+truck 【货车】
+peak-tram 【缆车】
+warm 【温暖的】
+light-van 【小型货车】
+automobile carrier 【货运卡车】
+ambulance 【救护车】
+garbage truck 【垃圾车】
+rainy 【下雨的】
+fire engine 【消防车】
+trailer truck 【拖车】
+tractor 【牵引车】
+camper 【露营车】
+mail car 【邮车】
+police car 【警车】
+windy 【多风的】
+train 【火车】
+metro 【地铁】
+cold 【冷的】
+high speed trains 【高铁】
+sports car 【跑车】
+formula car 【方程式赛车】
+helicopter 【直升机】
+aeroplane 【飞机】
+cloudy 【多云的】
+junk 【帆船】
+ship 【船】
+weather 【天气】
+passenger liner 【客轮】
+red light 【红灯】
+yellow light 【黄灯】
+green light 【绿灯】
+war ship 【军舰】
+helmet 【头盔】
+accelerator 【加速】
+brake 【刹车】
+vehicle 【交通工具】
+jam 【塞车】
+garage 【车库】
+overtake 【追上】
+insurance 【保险】
+engine 【发电机】
+driver 【司机】
+pilot 【机长】
+boarding check 【登机牌】
+crash 【撞车】
+arrive 【到达】
+delay 【延误】
+terminal 【终点站】
+world 【世界】
+accident 【（交通）事故】
+driver License 【驾驶证】
+speed 【速度】
+next 【下一个】
+kilometer 【公里】
+lots of 【大量的】
+bridge 【桥】
+building 【建筑】
+boating 【划船】
+village 【村庄】
+high 【高的】
+after 【在⋯⋯之后】
+water 【水】
+first 【第一】
+second 【第二】
+third 【第三】
+fourth 【第四】
+fifth 【第五】
+twelfth 【第十二】
+walk 【行走】
+China 【中国】
+pupil 【小学生】
+contest 【比赛】
+drive 【驾驶】
+under 【在⋯⋯下面】
+fast 【快的】
+map 【地图】
+white 【白色】
+old 【旧的】
+young 【年轻的】
+man 【男】
+woman 【女】
+kid 【小孩】
+whistle 【哨子】
+snowy 【下雪的】
+hat 【帽子】
+transportation 【运输】
+punctual 【准时的】
+sign 【标志】
+road 【路】
+narrow road 【窄路】
+dangerous 【危险的】
+safe 【安全的】
+hospital 【医院】
+school 【学校】
+silent 【寂静】
+careless 【粗心】
+information desk 【咨询台】
+horn 【喇叭】
+travel 【旅行】
+gas 【汽油】
+distance 【距离】
+direction 【方向】
+oil 【石油】
+number 【号牌】
+seat belt 【安全带】
+tyre 【轮胎】
+wheel 【车轮】
+sun glasses 【太阳眼镜】
+start 【开始】
+street 【大街】
+petrol station 【加油站】
+handbrake 【手刹】

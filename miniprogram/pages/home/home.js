@@ -1,5 +1,5 @@
 import $ from './../../utils/Tool'
-import { userModel, bookModel, wordModel, roomModel } from './../../model/index'
+import { userModel, bookModel, wordModel, roomModel, activityModel } from './../../model/index'
 import { getCombatSubjectNumber, SUBJECT_HAS_OPTIONS_NUMBER } from '../../utils/setting'
 import { formatList } from '../../utils/util'
 import router from './../../utils/router'
@@ -15,7 +15,8 @@ Page({
       x: 0,
       y: 0
     },
-    videoAdState: true
+    videoAdState: true,
+    activityList: []
   },
   /**
    * 好友对战或随机匹配没有房间的时候，创建单词PK房间
@@ -69,9 +70,8 @@ Page({
    */
   async getData() {
     $.loading()
-    const userInfo = await userModel.getOwnInfo()
-    const bookList = await bookModel.getInfo()
-    this.setData({ userInfo, bookList })
+    const [userInfo, bookList, { data: activityList }] = await Promise.all([userModel.getOwnInfo(), bookModel.getInfo(), activityModel.getActivityList()])
+    this.setData({ userInfo, bookList, activityList })
     $.hideLoading()
   },
   /**
@@ -127,6 +127,12 @@ Page({
   },
   onToSetting() {
     router.push('setting')
+  },
+  onToActivity(event) {
+    const { detail: { id: activityId } } = event
+    router.push('activity', {
+      activityId
+    })
   },
   onSignMove(event) {
     const { detail: { x, y } } = event

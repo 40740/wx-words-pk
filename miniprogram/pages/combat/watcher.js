@@ -1,5 +1,5 @@
 import $ from './../../utils/Tool'
-import { userModel, roomModel } from './../../model/index'
+import { userModel, roomModel, activityModel } from './../../model/index'
 import { roomStateHandle, centerUserInfoHandle } from './utils'
 import { ROOM_STATE } from '../../model/room'
 import { sleep } from '../../utils/util'
@@ -10,12 +10,22 @@ const LEFT_SELECT = 'left.gradeSum'
 const RIGHT_SELECT = 'right.gradeSum'
 const NEXT_ROOM = 'nextRoomId'
 
+function initActivityIds(bookDesc) {
+  activityModel.getActivityIdsByBookDesc(bookDesc)
+    .then(({ data }) => {
+      this.setData({
+        activityIds: data.map(item => item._id)
+      })
+    })
+}
+
 async function initRoomInfo(data) {
   $.loading('初始化房间配置...')
   if (data) {
     const { _id, isFriend, bookDesc, bookName, state, _openid, list, isNPC } = data
     if (roomStateHandle.call(this, state)) {
       const isHouseOwner = _openid === $.store.get('openid')
+      initActivityIds.call(this, bookDesc)
       this.setData({
         roomInfo: {
           roomId: _id,

@@ -37,6 +37,9 @@
   <view class="card-item" catchtap="onClearUserWords">
     <button class="card-item__title" hover-class="none">清空生词本数据</button>
   </view>
+  <view class="card-item" catchtap="onClearStorage">
+    <button class="card-item__title" hover-class="none">清除本地缓存(需重启小程序)</button>
+  </view>
 </view>
 
 <view class="card shadow-box">

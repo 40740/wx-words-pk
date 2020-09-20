@@ -18,7 +18,8 @@ Page({
     right: {},
     tipNumber: 0,
     nextRoomId: '',
-    bgmState: null
+    bgmState: null,
+    activityIds: []
   },
 
   onLoad(options) {
