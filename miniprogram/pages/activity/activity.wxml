@@ -16,7 +16,8 @@
     <text class="head-status">{{status}}</text>
   </view>
 
-  <scroll-view scroll-y="{{true}}" style="height: {{listHeight}}px;" class="list animated fadeIn faster">
+  <scroll-view scroll-y="{{true}}" style="height: {{listHeight}}px;" bindscrolltolower="onReachBottom"
+  lower-threshold="100" class="list animated fadeIn faster">
     <block wx:for="{{rankingList}}" wx:key="index" wx:for-index="index" wx:for-item="user">
       <view class="item animated fadeIn faster">
         <view class="ranking-num">

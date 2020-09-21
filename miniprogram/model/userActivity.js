@@ -63,26 +63,55 @@ class UserActivityModel extends Base {
     return this.model.where({ _openid: openid, activityId }).limit(1).get()
   }
 
-  async getGradeRank(activityId) {
-    const { data: list } = await this.model.where({
-      activityId,
-      avatarUrl: this._.neq('')
-    }).orderBy('grade', 'desc').limit(20).field({
-      avatarUrl: true,
-      nickName: true,
-      grade: true
-    }).get()
+  getSortList(activityId, page, len) {
+    return this.model.aggregate()
+      .sort({ grade: -1 })
+      .match({
+        activityId,
+        avatarUrl: this._.neq('')
+      })
+      .skip((page - 1) * len)
+      .limit(len)
+      .end()
+  }
+
+  async getGradeRank(activityId, page = 1) {
+    const len = 20
     let myInfo = {}
-    const { data: userinfo } = await this.getUserInfo($.store.get('openid'), activityId)
-    const data = userinfo[0]
-    if (typeof data !== 'undefined') {
-      const { total: number } = await this.model.where({
-        grade: this._.gte(data.grade),
+    let sumTotal = -1
+    let list = []
+    if (page === 1) {
+      const [{ total }, { data: userinfo }, { list: sortList }] = await Promise.all([this.model.where({
         activityId
-      }).count()
-      myInfo = { ...data, number }
+      }).count(),
+      this.getUserInfo($.store.get('openid'), activityId),
+      this.getSortList(activityId, page, len)
+      ])
+      sumTotal = total
+      list = sortList
+
+      const data = userinfo[0]
+      if (typeof data !== 'undefined') {
+        const { total: number } = await this.model.where({
+          grade: this._.gte(data.grade),
+          activityId
+        }).count()
+        myInfo = { ...data, number }
+      }
+    } else {
+      const { list: sortList } = await this.getSortList(activityId, page, len)
+      list = sortList
     }
-    return { list, myInfo }
+
+    return {
+      list,
+      myInfo,
+      data: {
+        list,
+        size: len,
+        total: sumTotal
+      }
+    }
   }
 }
 
