@@ -2,7 +2,7 @@ import $ from './../../utils/Tool'
 import router from '../../utils/router'
 import { activityModel, userActivityModel } from '../../model/index'
 import log from './../../utils/log'
-import { rpx2Px } from '../../utils/util'
+import { rpx2Px, throttle } from '../../utils/util'
 
 Page({
   data: {
@@ -27,7 +27,7 @@ Page({
     const { activityId } = options
     this.getData(activityId)
   },
-  async onReachBottom() {
+  onReachBottom: throttle(async function() {
     const { data: { page, size, total, id } } = this
     const pageSize = Math.ceil(total / size)
     if (page < pageSize) {
@@ -35,13 +35,15 @@ Page({
     } else {
       this.setData({ onBottom: true })
     }
-  },
+  }, 1000),
   async getListData(id, page) {
-    $.loading('加载中...')
-    const { data } = await userActivityModel.getGradeRank(id, page)
-    const { data: { rankingList } } = this
-    this.setData({ rankingList: rankingList.concat(data.list), page })
-    $.hideLoading()
+    if (page !== 1) {
+      $.loading('加载中...')
+      const { data } = await userActivityModel.getGradeRank(id, page)
+      const { data: { rankingList } } = this
+      this.setData({ rankingList: rankingList.concat(data.list), page })
+      $.hideLoading()
+    }
   },
   async getData(id) {
     try {
