@@ -108,7 +108,8 @@ Page({
   },
   async onLoad() {
     await this.getData()
-    this.selectComponent('#footer').showGithubAuto()
+    this.data.activityList.length !== 0 && this.selectComponent('#footer').showGithubAuto()
+    // this.selectComponent('#footer').showGithubAuto() // TODO: change
     setTimeout(() => {
       this.setData({
         signHide: true
@@ -129,8 +130,11 @@ Page({
     router.push('setting')
   },
   onToActivity(event) {
-    const { detail: { id: activityId } } = event
-    router.push('activity', {
+    let activityId = this.data.activityList[0]._id || ''
+    if (event && event.detail && event.detail.id) {
+      activityId = event.detail.id
+    }
+    activityId !== '' && router.push('activity', {
       activityId
     })
   },

@@ -18,6 +18,10 @@ Component({
     },
     showGithubAuto() {
       getToastGithub() && this.onGithub()
+    },
+    // TODO: change
+    onToActivity() {
+      this.triggerEvent('onToActivity')
     }
   }
 })
