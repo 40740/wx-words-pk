@@ -18,10 +18,12 @@ Page({
     shareText: '',
     id: '',
     status: '',
+    inProgress: false,
     page: 1,
     size: 0,
     total: 0,
-    onBottom: false
+    onBottom: false,
+    todaySurplus: 0
   },
   onLoad(options) {
     const { activityId } = options
@@ -52,8 +54,9 @@ Page({
         activityModel.getDetail(id),
         userActivityModel.getGradeRank(id)
       ])
-      const { title, rule, headImg, headText, chatCodeImg, chatDesc, shareText, inProgress, _id } = activityDetail[0]
+      const { title, rule, headImg, headText, chatCodeImg, chatDesc, shareText, inProgress, _id, gameLimit } = activityDetail[0]
       if (data.total <= data.size) { this.setData({ onBottom: true }) }
+      const todaySurplus = activityModel.getTodaySurplus(gameLimit)
       this.setData({
         title,
         ruleHtmlSnip: rule,
@@ -62,12 +65,14 @@ Page({
         chatCodeImg,
         chatDesc,
         shareText,
-        status: inProgress ? '活动中' : '活动未开始',
+        status: inProgress ? '活动中' : '不在活动时间',
+        inProgress,
         id: _id,
         rankingList: list,
         myInfo,
         size: data.size,
-        total: data.total
+        total: data.total,
+        todaySurplus: todaySurplus > 0 ? todaySurplus : 0
       })
       $.hideLoading()
     } catch (error) {
@@ -81,7 +86,7 @@ Page({
     return {
       title: this.shareText,
       path: `/pages/activity/activity?activityId=${id}`,
-      imageUrl: './../../images/share-default-bg.png'
+      imageUrl: './../../images/activity_share_default_bg.jpg'
     }
   },
   onRule() {

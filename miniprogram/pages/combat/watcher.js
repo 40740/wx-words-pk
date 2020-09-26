@@ -14,7 +14,7 @@ function initActivityIds(bookDesc) {
   activityModel.getActivityIdsByBookDesc(bookDesc)
     .then(({ data }) => {
       this.setData({
-        activityIds: data.map(item => item._id)
+        activityIds: data.map(item => ({ id: item._id, limit: item.gameLimit }))
       })
     })
 }

@@ -1,5 +1,5 @@
 import { throttle, px2Rpx, formatList, dateFormat } from '../../../../utils/util'
-import { roomModel, userModel, wordModel, signModel, userActivityModel } from '../../../../model/index'
+import { roomModel, userModel, wordModel, signModel, userActivityModel, activityModel } from '../../../../model/index'
 import $ from './../../../../utils/Tool'
 import log from './../../../../utils/log'
 import { getCombatSubjectNumber, SUBJECT_HAS_OPTIONS_NUMBER, SIGN_PVP_NUMBER, SIGN_WIN_NUMBER } from '../../../../utils/setting'
@@ -231,8 +231,16 @@ Component({
 
     async calcActivityData(obj, userInfo) {
       const { data: { activityIds } } = this
-      for (const activityId of activityIds) {
-        await userActivityModel.finishCombat({ activityId, ...obj }, userInfo)
+      let i = 0
+      for (const activityObj of activityIds) {
+        const todaySurplus = activityModel.getTodaySurplus(activityObj.limit)
+        if (todaySurplus > 0) {
+          await userActivityModel.finishCombat({ activityId: activityObj.id, ...obj }, userInfo)
+        }
+        if (i === 0) {
+          activityModel.addLocalTimes()
+          i++
+        }
       }
     }
   }

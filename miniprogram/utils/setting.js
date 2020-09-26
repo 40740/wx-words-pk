@@ -1,4 +1,5 @@
 import $ from './Tool'
+import { dateFormat } from './util'
 
 export const SIGN_WIN_NUMBER = 2 // 签到需要胜利的局数
 export const SIGN_PVP_NUMBER = 5 // 签到需要对战的局数
@@ -22,6 +23,38 @@ const AD_STATE = 'ad_state'
 const VIBRATE_STATE = 'vibrate_state'
 const TOAST_GITHUB = 'toast_github'
 // 存储到缓存中的key值 ↑
+
+// 活动限制局数 key ↓
+const ACTIVITY_LOCAL_NUMBER = 'activity_local_number' // 本地局数限制，当前对局的局数
+const ACTIVITY_LOCAL_DATE = 'activity_local_date' // 本地局数限制，写入的日期
+// 活动限制局数 key 上
+
+/**
+ * 获取本地对战了的局数
+ */
+export const getLocalTimes = function() {
+  const local = $.storage.get(ACTIVITY_LOCAL_NUMBER) || 0
+  return local
+}
+
+/**
+ * 设置本地对战局数
+ * @param {Number} number 本地对战局数
+ */
+export const setLocalTimes = function(number) {
+  $.storage.set(ACTIVITY_LOCAL_NUMBER, number)
+  return number
+}
+
+export const getLocalDate = function() {
+  return $.storage.get(ACTIVITY_LOCAL_DATE)
+}
+
+export const setLocalDate = function() {
+  const now = dateFormat('YYYY-mm-dd')
+  $.storage.set(ACTIVITY_LOCAL_DATE, now)
+  return now
+}
 
 /**
  * 获取广告状态

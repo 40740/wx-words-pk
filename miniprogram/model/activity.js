@@ -1,3 +1,5 @@
+import { getLocalDate, getLocalTimes, setLocalDate, setLocalTimes } from '../utils/setting'
+import { dateFormat } from '../utils/util'
 import Base from './base'
 const collectionName = 'activity'
 
@@ -13,7 +15,8 @@ export function getOneActivity(title, headImg, headText, ruleHtmlSnip, chatCodeI
     bannerImg, // 入口图片
     bookDescs, // 使用哪些书，可以给这个活动增加词力值
     inProgress: false, // 活动是否在收集词力值
-    show: true // 是否显示
+    show: true, // 是否显示
+    gameLimit: 20 // 活动局数限制
   }
 }
 
@@ -46,7 +49,29 @@ class ActivityModel extends Base {
       bookDescs: this._.all([bookDesc]),
       inProgress: true,
       show: true
-    }).field({ _id: true }).get()
+    }).field({ _id: true, gameLimit: true }).get()
+  }
+
+  /**
+   * 获取今日剩余局数，如果当天已经有数据，则 返回limit - 当天局数
+   * 否则设置当天的局数为0、日期为当天，剩余局数为当limit
+   * @param {Number} limit 限制局数
+   */
+  getTodaySurplus(limit = 20) {
+    const date = getLocalDate()
+    const now = dateFormat('YYYY-mm-dd')
+    if (date === now) {
+      const number = getLocalTimes()
+      return limit - number
+    }
+    setLocalTimes(0)
+    setLocalDate()
+    return limit
+  }
+
+  addLocalTimes() {
+    const times = getLocalTimes()
+    setLocalTimes(times + 1)
   }
 }
 

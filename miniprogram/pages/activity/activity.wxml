@@ -10,14 +10,14 @@
 <view class="ac-page">
   <view class="head animated fadeIn faster" wx:if="{{id!==''}}">
     <image src="{{headImg}}" class="head-img" />
-    <button class="head-btn head-btn__share touch-s" open-type="share" hover-class="none">邀请好友</button>
+    <button class="head-btn head-btn__share touch-s" open-type="share" hover-class="none">分享活动</button>
     <button class="head-btn head-btn__rule touch-s" catchtap="onRule" hover-class="none">活动规则</button>
     <text class="head-text">{{headText}}</text>
-    <text class="head-status">{{status}}</text>
   </view>
 
   <scroll-view scroll-y="{{true}}" style="height: {{listHeight}}px;" bindscrolltolower="onReachBottom"
   lower-threshold="100" class="list animated fadeIn faster">
+    <text wx:if="{{status!==''}}" class="activity-status">{{inProgress ? status + '，今日剩余' + todaySurplus + '次机会': status}}</text>
     <block wx:for="{{rankingList}}" wx:key="index" wx:for-index="index" wx:for-item="user">
       <view class="item animated fadeIn faster">
         <view class="ranking-num">
