@@ -82,9 +82,9 @@ Page({
   },
   onTapBack() { router.toHome() },
   onShareAppMessage() {
-    const { data: { id } } = this
+    const { data: { id, shareText = '' } } = this
     return {
-      title: this.shareText,
+      title: shareText !== '' ? shareText : '❤ 来一起学习吧，轻松掌握【四六级/考研】必考单词 ~ 👏👏',
       path: `/pages/activity/activity?activityId=${id}`,
       imageUrl: './../../images/activity_share_default_bg.jpg'
     }
