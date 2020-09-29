@@ -9,7 +9,7 @@ Component({
     // 提示文字
     text: {
       type: String,
-      value: '点击「添加小程序」，轻松过了「四六级」>'
+      value: '点击「添加小程序」，英语学习快人一步 >'
     },
     // 多少秒后关闭
     duration: {

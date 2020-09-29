@@ -121,9 +121,9 @@ Page({
   },
   onShareAppMessage() {
     return {
-      title: `❤ 来一起学习吧，轻松掌握【四六级/考研】必考单词 ~ 👏👏`,
+      title: `❤ 快来和我答题pk，赢取儿童头盔吧 ~ 🎉 🎉`, // TODO: change
       path: `/pages/home/home`,
-      imageUrl: './../../images/share-default-bg.png'
+      imageUrl: './../../images/activity_share_default_bg.jpg'
     }
   },
   onToSetting() {
