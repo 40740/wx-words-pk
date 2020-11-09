@@ -8,12 +8,13 @@
     <text class="footer-text">建议反馈</text>
   </button>
 
+  <!-- 打赏
   <button class="footer-item" hover-class="btn-hover" catchtap="onZan">
     <image class="footer-icon" src="./../../../../images/home-zan.png" />
     <text class="footer-text">打赏作者</text>
   </button>
+  -->
 
-  <!-- 开源合作
   <button class="footer-item" hover-class="btn-hover" catchtap="onGithub">
     <image class="footer-icon" src="./../../../../images/home-github.png" />
     <text class="footer-text">开源合作</text>
@@ -25,13 +26,14 @@
       <text catchtap="onCopyGithub" class="touch-s" style="color:#FF9C37;font-size: 25rpx;margin-top:24rpx;display:block;text-align: center;">点我复制github开源地址</text>
     </view>
   </message>
-  -->
 
+  <!-- 活动
   <message id="message">
     <view slot="content">
       <text>广东增城区第二届交通安全知识答题挑战赛火热进行中，送</text><text style="color:#FF9C37;">儿童头盔</text><text>，让小小头盔，“罩”亮孩子一生！</text>
       <text catchtap="onToActivity" class="touch-s" style="color:#FF9C37;font-size: 25rpx;margin-top:24rpx;display:block;text-align: center;">查看活动详情</text>
     </view>
   </message>
+  -->
 
 </view>

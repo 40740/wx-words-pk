@@ -42,8 +42,8 @@
 
 <view class="footer animated fadeIn faster" hidden="{{!myInfo.number || !myInfo.avatarUrl}}">
   <text class="footer-ranking">{{myInfo.number}}</text>
-  <image class="footer-avartar" src="{{myInfo.avatarUrl}}" />
-  <text class="footer-nickname">{{myInfo.nickName}}</text>
+  <open-data class="footer-avartar" type="userAvatarUrl"></open-data>
+  <open-data class="footer-nickname" type="userNickName"></open-data>
   <view class="grade">
     <image class="grade-img" src="./../../images/ranking-grade.png" />
     <text class="grade-text">{{myInfo.grade}}</text>

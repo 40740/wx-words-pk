@@ -99,7 +99,10 @@ Component({
       return typeof grades[index] !== 'undefined' && typeof grades[index].index !== 'undefined' && grades[index].index === correctIndex
     },
     getGrade(gradeSum) {
-      const num = Math.floor(gradeSum / 50)
+      const { properties: { wordList } } = this
+      const maxScore = wordList.length * 2
+      let num = Math.floor(gradeSum / 50)
+      num = num > maxScore ? maxScore : num
       return num > 0 ? num : 0
     },
     async calcResultData() {
