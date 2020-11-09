@@ -34,8 +34,9 @@ class UserModel extends Base {
   }
 
   async registerAfter() {
-    // TODO: 新用户干预选择图书为交通 后面可以删除
-    return await bookModel.changeBook('traffic', 'random', '交通必备词', '交通')
+    // 1. 新用户干预选择图书为交通
+    // return await bookModel.changeBook('traffic', 'random', '交通必备词', '交通')
+
   }
 
   register() {

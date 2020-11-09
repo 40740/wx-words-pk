@@ -213,6 +213,7 @@ page {
   width: 60rpx;
   height: 60rpx;
   border-radius: 30rpx;
+  overflow: hidden;
 }
 
 .footer-nickname {
