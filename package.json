@@ -7,8 +7,6 @@
     "doc": "docs"
   },
   "scripts": {
-    "docs:dev": "vuepress dev docs",
-    "docs:build": "vuepress build docs"
   },
   "repository": {
     "type": "git",
@@ -23,8 +21,7 @@
   "homepage": "https://github.com/arleyGuoLei/wx-words-pk#readme",
   "devDependencies": {
     "eslint": "^6.8.0",
-    "eslint-config-wxapp": "^1.0.0",
-    "vuepress": "^1.4.1"
+    "eslint-config-wxapp": "^1.0.0"
   },
   "dependencies": {
     "wxapp-animate": "0.0.2"
